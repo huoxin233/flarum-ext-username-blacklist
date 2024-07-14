@@ -15,4 +15,4 @@ clarkwinkelmann-username-blacklist:
                 One expression per line.
                 Will have priority over the blacklist.
     api:
-        fallbackMessage: The username is not whitelisted.
+        fallbackMessage: The username/nickname is not whitelisted.

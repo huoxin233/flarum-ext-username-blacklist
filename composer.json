@@ -1,6 +1,6 @@
 {
     "name": "clarkwinkelmann/flarum-ext-username-blacklist",
-    "description": "Blacklist or whitelist specific usernames",
+    "description": "Blacklist or whitelist specific usernames and nicknames",
     "keywords": [
         "flarum",
         "username",
