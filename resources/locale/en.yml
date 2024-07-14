@@ -14,5 +14,6 @@ clarkwinkelmann-username-blacklist:
             whitelistHelp: >
                 One expression per line.
                 Will have priority over the blacklist.
+            canBypassBlacklist: Can bypass username/nickname blacklist
     api:
         fallbackMessage: The username/nickname is not whitelisted.

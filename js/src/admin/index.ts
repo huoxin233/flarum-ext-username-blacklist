@@ -32,5 +32,13 @@ app.initializers.add('clarkwinkelmann-username-blacklist', () => {
                     bidi: this.setting('clarkwinkelmann-username-blacklist.whitelist'),
                 }),
             ]);
-        });
+        })
+        .registerPermission(
+            {
+              icon: 'fas fa-spell-check',
+              label: app.translator.trans('clarkwinkelmann-username-blacklist.admin.settings.canBypassBlacklist'),
+              permission: 'clarkwinkelmann-username-blacklist.admin.permissions.canBypassBlacklist',
+            },
+            'moderate'
+          );
 });

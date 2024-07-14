@@ -16,6 +16,11 @@ return [
     (new Extend\Validator(UserValidator::class))
         ->configure(function (UserValidator $flarumValidator, Validator $validator) {
             $rules = $validator->getRules();
+            $user = $flarumValidator->getUser();
+            
+            if ($user->hasPermission('clarkwinkelmann-username-blacklist.admin.permissions.canBypassBlacklist')) {
+                return;
+            }
 
             if (array_key_exists('username', $rules)) {
                 $rules['username'][] = resolve(WhitelistRule::class);
