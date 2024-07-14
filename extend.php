@@ -5,7 +5,6 @@ namespace ClarkWinkelmann\UsernameBlacklist;
 use Flarum\Extend;
 use Flarum\User\UserValidator;
 use Illuminate\Contracts\Validation\Validator;
-use Flarum\User\User;
 
 return [
     (new Extend\Frontend('admin'))
